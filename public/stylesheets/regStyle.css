@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: "OS";
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face{
+	font-family: "Roboto";
+	src: url(../fonts/Roboto-Light.ttf);
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+html{
+	font-size: 16px;
+}
+.wind-chat{
+	width: 40%;
+	height: 60vh;
+	border-radius: 2px;
+	display: block;
+	background-color: rgba(71, 101, 146, 0.54);
+	position: absolute;
+	z-index: 99999999;
+	overflow: hidden;
+	left: 30%;
+	top: 15%;
+
+}
+form{
+	color: #fff;
+	font-family: "OS";
+	font-size: 1.2rem
+}
+form input[type="text"]{
+	display: block;
+	padding-left: 5px;
+	height: 30px;
+	margin: 5% auto;
+}
+form label{
+	display: block;
+	font-size: 1.2rem;
+	text-align: center;
+	margin-top: 30%;
+}
+form #start{
+	display: block;
+	font-family: "Roboto";
+	text-align: center;
+	color: #333;
+	width: 30%;
+	font-size: 1rem;
+	padding: 3px 0;
+	background-color: #fff;
+	border: none;
+	border-radius: 2px;
+	margin: 0 auto;
+}
