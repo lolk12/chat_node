@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/singin.css">
+    <title>Регистрация</title>
+</head>
+<body>
+<div class="container main">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="row text-center">
+                <h1>Регистрация</h1>
+                <form action="/singup" method="post">
+                    <div class="col-md-12"><label>Имя</label><input type="text" name="firstName"></div>
+                    <div class="col-md-12"><label>Фамилия</label><input type="text" name="lastName"></div>
+                    <div class="col-md-12"><label>Почта</label><input type="text" name="email"></div>
+                    <div class="col-md-12"><label>ИНН</label><input type="text" name="vatin"></div>
+                    <div class="col-md-12"><label>Пароль</label><input type="password" name="password"></div>
+                    <div class="col-md-12"><label>Повторите пароль </label><input type="password" ></div>
+                    <div class="col-md-12"><input type="submit" value="Зарегистрироваться" class="btn btn-info"></div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="js/singin.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+</body>
+</html>

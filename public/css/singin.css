@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: "OS";
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face{
+	font-family: "Roboto";
+	src: url(../fonts/Roboto-Light.ttf);
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+html {
+	font-size: 16px;
+}
+
+h1{
+	font-family: "OS";
+	padding: 2% 0;
+	border-bottom: solid 1px #eee;
+
+}
+.main label{
+	width: 100%;
+	padding:2% 0;
+	margin: 0;
+	display: inline-block;
+}
+.main input {
+	border: solid 1px #e8e8e8;
+	border-radius: 6px;
+	height: 30px;
+	padding-left: 10px;
+	margin: 0;
+}
+.main input:focus {
+	outline: none;
+	border-radius: 6px;
+	box-shadow:0 0 3px 1px #8ad6f3;
+}
+.main input[type="submit"]{
+	margin:2% 0;
+	width: 120px;
+	height: 35px;
+}

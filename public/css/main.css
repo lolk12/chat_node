@@ -1,0 +1,450 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+@font-face
+{
+    font-family: 'OS';
+
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+a
+{
+    text-decoration: none;
+}
+li
+{
+    list-style: none;
+}
+html
+{
+    font-size: 16px;
+}
+.bgi
+{
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(../images/pattern.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.bgiMaska
+{
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0,0,0,.15);
+}
+.main
+{
+    display: -webkit-flex;
+    display:    -moz-flex;
+    display:     -ms-flex;
+    display:      -o-flex;
+    display:         flex;
+
+    width: 100%;
+    height: 100vh;
+
+    -ms-align-items: center;
+        align-items: center;
+    justify-content: center;
+}
+.wind-chat
+{
+    position: absolute;
+    z-index: 99999999;
+
+    overflow: hidden;
+
+    width: 40%;
+    height: 50vh;
+
+    transition: .5s;
+
+    border-radius: 2px;
+    background-color: rgba(16, 43, 82, .54);
+}
+.messages
+{
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    width: 99%;
+    height: 60vh;
+    margin: 2.0% 0;
+    padding: 0 2.5%;
+}
+#message_text
+{
+    width: 90%;
+    height: 10vh;
+    margin: 1% 4%;
+    padding: 5px;
+
+    resize: none;
+
+    border-radius: 2px;
+
+    bordr-radius: 3px;
+}
+#message_btn
+{
+    display: block;
+
+    width: 50%;
+    height: 30px;
+    margin: 2% auto;
+}
+.msg_data
+{
+    font-family: 'OS', sain-sarif;
+    font-size: 13px;
+
+    text-align: center;
+
+    color: #fff;
+}
+.user
+{
+    float: left;
+}
+.nick
+{
+    float: right;
+
+    color: #fff;
+}
+.msg
+{
+    font-family: 'OS', sain-sarif;
+
+    width: 96%;
+    margin-top: 5px;
+    padding: 5px;
+
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+}
+.userNew
+{
+    color: #fff;
+}
+.text_msg
+{
+    font-size: 13px;
+
+    overflow: hidden;
+
+    width: 100%;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-bottom: 7px;
+
+    text-align: left;
+    word-wrap: break-word;
+}
+.time
+{
+    float: right;
+}
+.date
+{
+    text-align: center;
+}
+.panel
+{
+    width: 100%;
+}
+
+
+/*Регистрация*/
+reg
+{
+    overflow: hidden;
+}
+.reg h1
+{
+    font-family: 'OS', sain-sarif;
+    font-size: 20px;
+    font-weight: 200;
+
+    padding: 10px 0;
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #f7db6a;
+}
+.reg hr
+{
+    color: rgba(255,255,255,.5);
+}
+.reg form
+{
+    margin: 6% 0;
+}
+.reg input
+{
+    font-family: 'OS', sain-sarif;
+    line-height: 22px;
+
+    display: block;
+
+    width: 80%;
+    margin: 5% auto;
+    padding: 5px;
+
+    border: none;
+    border-radius: 2px;
+}
+.reg input:focus
+{
+    -webkit-box-shadow: 0 0 2px 1px #3f3251;
+       -moz-box-shadow: 0 0 2px 1px #3f3251;
+            box-shadow: 0 0 3px 1px #3f3251;
+}
+.reg input:active
+{
+    border: none;
+}
+#inSyte
+{
+    font-family: 'OS',sain-sarif;
+
+    display: block;
+
+    width: 40%;
+    height: 30px;
+    margin: 0 auto;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #333;
+    border: none;
+    background: #fff;
+}
+form
+{
+    top: calc(50% /2);
+    left: calc(50% /2);
+}
+
+@keyframes reg
+{
+    20%
+    {
+        transform: translateY(2px);
+    }
+    40%
+    {
+        transform: translateY(-2px);
+    }
+    60%
+    {
+        transform: translateY(2px);
+    }
+    80%
+    {
+        transform: translateY(-2px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+/*Регистрация END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Прелодер **/
+
+width: 100%;
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.uil-ring-css {
+  background: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: -15% auto;
+}
+.uil-ring-css > div {
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 160px;
+  top: 20px;
+  left: 20px;
+  border-radius: 80px;
+  box-shadow: 0 6px 2px -1px #bbbbbb;
+  -ms-animation: uil-ring-anim 1s linear infinite;
+  -moz-animation: uil-ring-anim 1s linear infinite;
+  -webkit-animation: uil-ring-anim 1s linear infinite;
+  -o-animation: uil-ring-anim 1s linear infinite;
+  animation: uil-ring-anim 1s linear infinite;
+}
+
+/** Преложер END**/
